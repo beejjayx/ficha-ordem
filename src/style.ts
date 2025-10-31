@@ -1,0 +1,32 @@
+import { createGlobalStyle } from 'styled-components';
+
+const colors = {
+    white: ' #fff',
+    background: 'rgba(18, 13, 65, 1)',
+};
+
+export const breakpoints = {
+    tablet: '1024px',
+    mobile: '768px',
+};
+
+export const GlobalStyle = createGlobalStyle`
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    
+    body {
+        background-color: ${colors.background};
+        color: ${colors.white};
+    }
+        
+    .container {
+        width: 1024px;
+        background-color: green;
+        margin: 0 auto;
+    }`
+
+export default createGlobalStyle;
